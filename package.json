@@ -2,12 +2,13 @@
     "name": "landing",
     "version": "1.0.0",
     "scripts": {
-        "start": "gulp",
+        "start": "yarn run build && node server.js",
+        "dev": "gulp",
         "clean": "gulp clean",
-        "build": "gulp build",
-        "test": "nyc mocha --opts ./mocha.opts"
+        "build": "gulp build"
     },
-    "dependencies": {
+
+        "dependencies": {
         "@babel/core": "7.8.7",
         "@babel/preset-env": "7.8.7",
         "browser-sync": "2.26.7",
@@ -28,7 +29,8 @@
         "vinyl-named": "1.1.0",
         "webpack": "4.42.0",
         "webpack-cli": "3.3.11",
-        "webpack-stream": "5.2.1"
+        "webpack-stream": "5.2.1",
+        "express": "4.17.1"
     },
     "nyc": {
         "extension": [
