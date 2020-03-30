@@ -148,6 +148,8 @@ button:focus {
     }
 }
 
+
+
 .profile-block-info {
     padding: 0;
     margin-top: 0;
@@ -385,4 +387,10 @@ a:hover{
 
 .follow-person-info{
     display: flex;
+}
+
+@media (max-width: 991px) {
+.write-tweet{
+    margin-top: 20px;
+}
 }

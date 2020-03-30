@@ -14,7 +14,6 @@ a:hover{
     -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
-
 }
 
 .row {
@@ -22,8 +21,32 @@ a:hover{
     margin: 0;
 }
 
+/* HEADER */
+
+.header {
+    background-color: #f5f8fa;
+    flex-wrap: wrap;
+}
+
 .head {
+    margin-left: 5%;
     flex-wrap: nowrap;
+}
+
+.navbar {
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #2AA3EF!important;
+    font-size: 0.48rem!important;
+    font-weight: 900!important;
+}
+
+.fa, .fas {
+    font-weight: 900!important;
 }
 
 .navigation {
@@ -39,6 +62,7 @@ a:hover{
     font-size: 14px;
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .navigation-item:hover {
@@ -48,6 +72,10 @@ a:hover{
 
 .navigation-item__img {
     margin-right: 5px;
+}
+
+.navigation-list {
+    display: flex;
 }
 
 .search__input {
@@ -84,10 +112,43 @@ a:hover{
     height: 21px;
     margin-right: 5px;
 }
-.head {
-    flex-wrap: nowrap;
+
+button {
+    padding-left: 0px!important;
 }
 
+button:focus {
+    outline: none;
+}
+
+.btn {
+    width: auto;
+    height: 30px;
+    background-color: #4ca2f5;
+    border-radius: 0;
+}
+
+.btn-primary {
+    font-size: 0.8rem;
+}
+
+.twit {
+    border-radius: 15px;
+}
+
+@media (max-width: 990px) {
+    .head {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .twitter__logo {
+        display: none;
+    }
+}
 .navigation {
     max-width: 600px;
     width: 100%;
@@ -345,4 +406,10 @@ ul{
     margin: 0;
     width: 100%;
     padding-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+.edit{
+    padding-right: 0;
+}
 }
