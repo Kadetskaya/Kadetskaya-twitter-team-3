@@ -20,6 +20,18 @@ body {
 .head {
     margin-left: 5%;
     flex-wrap: nowrap;
+    padding: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #2AA3EF!important;
+    font-size: 0.48rem!important;
+    font-weight: 900!important;
+}
+
+.fa, .fas {
+    font-weight: 900!important;
 }
 
 .navbar {
@@ -140,6 +152,7 @@ button:focus {
 }
 
 
+
 /* MAIN-BLOCK */
 
 .main {
@@ -163,6 +176,7 @@ button:focus {
     margin-top: 0;
     background-color: #ffffff;
     min-height: 140px;
+    min-width: 250px;
     overflow: visible;
 }
 
@@ -210,8 +224,12 @@ a {
 }
 
 .amount {
-    color: #4ca2f5;
+    color: #657786;
     margin-left: 23px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 form {
@@ -260,14 +278,76 @@ form {
     padding-top: 20px;
 }
 
+.form__search-tape {
+    background-color: white;
+    height: 100px;
+    margin-bottom: 5px;
+    min-width: 220px;
+}
+
+.form__finder-img {
+    background-color: #999999;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.form__finder-name {
+    margin: 0;
+    color: #179ece;
+}
+
+.form__finder-nickname {
+    color: #999999;
+    margin: 0;
+}
+
+.form__finder-following {
+    border-radius: 15px;
+    width: 120px;
+    border: 0;
+    color: white;
+    background-color: #56a2c6;
+}
+
+.form__search {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    background-color: #e5edf0;
+    display: none;
+    min-width: 220px;
+}
+
+.form__submit-search {
+    background-color: #56a2c6;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background-image: url(../img/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 5px;
+}
+
 @media (max-width: 990px) {
     .form {
         padding: 25px;
     }
 }
 
-@media (min-width: 540px)
-and (max-width: 990px) {
+@media (max-width:770px) {
+    .form__search {
+        display: block;
+    }
+    .form__submit-search {
+        display: block;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 990px) {
     .card {
         width: 100%;
         flex-direction: row;
