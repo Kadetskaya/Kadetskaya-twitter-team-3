@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Twitter - Profile</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/4272557b9c.js"></script>
+    <link href="css/personal.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar sticky-top header">
+    <div class="container">
+        <div class="row head align-items-center">
+            <div class="col-lg-1">
+                <nav class="navbar logotype">
+                    <a class="navigation-item" href="#">
+                        <img alt="Home icon" class="navigation-item__img home" src="img/home_icon.svg"><span
+                            class="navigation-item__text">Home</span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class=" col-lg-1 d-none d-lg-block offset-lg-5">
+                <img alt="twitter logo" class="twitter__logo" src="img/twitter_logo.svg">
+            </div>
+
+            <div class="col-lg-2 offset-1 d-none d-md-block">
+                <div class="search-block">
+                    <input class="search__input" placeholder="Search" type="text">
+                    <img alt="Search Icon" class="search__img" src="img/search_icon.svg">
+                </div>
+            </div>
+            <div class="col-lg-1 d-flex align-items-center">
+                <a class="btn btn-primary twit" href="#">Twitter</a>
+                <a class="nav-link text-muted" href="../index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid background-profile"></div>
+
+<div class="menu-block">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="tabs">
+                <ul class="tabs__caption">
+                    <li class="active tab">Tweets<span class="tabs-number">0</span></li>
+                    <li class="tab">Following<span class="tabs-number">2</span></li>
+                    <li class="tab">Followers<span class="tabs-number">2</span></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 edit-profile">
+                <a class="edit" href=#">Edit Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="main">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <div class="background-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+
+
+                <div class="info-block">
+                    <div class="profile-name">
+                        Yuschyk Yura
+                    </div>
+                    <div class="profile-tag">
+                        @Yuschyk
+                    </div>
+
+                    <div class="profile-bio">
+                        Edit your profile to add your bio
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tabs">
+                <div class="tabs__content active">
+                    <div class="write-tweet">
+                        <form action="" class="tweet-form">
+                            <div class="tweet-textarea-block">
+                            <textarea class="textarea" id="textarea" maxlength="280"
+                                      placeholder="Write your tweet..."></textarea>
+                                <div class="textarea-counter"><span class="count-symbol">0</span>/280</div>
+                            </div>
+                            <div class="tweet-submit-block">
+                                <input class="tweet-send" type="submit" value="TWEET">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tabs__content">
+                    Содержимое второго блока
+                </div>
+                <div class="tabs__content">
+                    Содержимое второго блока
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 followers-block">
+                <p class="bold follow-description">Who to follow · <a class="view-all" href="#viewAll">View all</a></p>
+
+                <div class="follow-person">
+                    <div class="follow-person-info">
+
+                        <div class="follow-person-background">
+                            <i class="fas fa-user person-icon"></i>
+                        </div>
+
+                        <div class="person-history">
+                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
+                            <input class="person-button" type="button" value="FOLLOWING">
+                        </div>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="follow-person">
+                    <div class="follow-person-info">
+
+                        <div class="follow-person-background">
+                            <i class="fas fa-user person-icon"></i>
+                        </div>
+
+                        <div class="person-history">
+                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
+                            <input class="person-button" type="button" value="FOLLOWING">
+                        </div>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="follow-person">
+                    <div class="follow-person-info">
+
+                        <div class="follow-person-background">
+                            <i class="fas fa-user person-icon"></i>
+                        </div>
+
+                        <div class="person-history">
+                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
+                            <input class="person-button" type="button" value="FOLLOWING">
+                        </div>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="follow-person">
+                    <div class="follow-person-info">
+
+                        <div class="follow-person-background">
+                            <i class="fas fa-user person-icon"></i>
+                        </div>
+
+                        <div class="person-history">
+                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
+                            <input class="person-button" type="button" value="FOLLOWING">
+                        </div>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/personal.js"></script>
+</body>
+</html>
