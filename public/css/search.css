@@ -5,7 +5,7 @@ body {
     font-family: HelveticaRegular;
 }
 
-.edit-row {
+.search-row {
     margin: 0;
 }
 
@@ -137,10 +137,8 @@ body {
 }
 
 
+/* MAIN-BLOCK */
 
-/* ----MAIN---- */
-
-/* MAIN__PROFILE */
 
 .edit-main {
     margin-top: 15px;
@@ -200,60 +198,97 @@ body {
     color: #000000;
 }
 
-.edit-name:hover {
+.edit-info {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+a {
+    color: #657786;
+}
+
+.amount {
+    color: #657786;
+    margin-left: 23px;
+}
+
+a:hover {
     text-decoration: none;
 }
 
 
-/* MAIN__FORM */
 
-.edit-form {
-    background-color: #ffffff;
-    padding: 10px;
+.center-align {
+    text-align: center;
+    background-color: #e5edf0;
 }
 
-.edit-form-title {
-    padding-top: 10px;
-    font-size: 28px;
+.form__search-tape {
+    background-color: white;
+    height: 100px;
+    margin-bottom: 5px;
+    min-width: 220px;
 }
 
-.edit-form-second {
-    margin-top: 15px;
+.form__finder-img {
+    background-color: #999999;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
-.form-group {
-    padding-top: 15px;
+.form__finder-name {
+    margin: 0;
+    color: #179ece;
 }
 
-.edit-names {
-    display: inline-block;
-    width: 49%;
-    flex-wrap: wrap;
+.form__finder-nickname {
+    color: #999999;
+    margin: 0;
 }
 
-.edit-form-control {
+.form__finder-following {
+    border-radius: 15px;
+    width: 120px;
     border: 0;
-    border-bottom: 2px solid #DEE2E6;
-    padding: 0;
+    color: white;
+    background-color: #56a2c6;
 }
 
-.edit-btn {
-    width: auto;
-    height: 30px;
-    background-color: #4ca2f5;
-    border-radius: 0;
-    font-size: 0.8rem;
+.form__search {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    background-color: #e5edf0;
+    display: none;
+    min-width: 220px;
 }
 
+.form__submit-search {
+    background-color: #56a2c6;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background-image: url(../img/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 5px;
+}
 
-@media (max-width: 990px) {
-    .edit-form {
-        padding: 25px;
+@media (max-width:770px) {
+    .form__search {
+        display: block;
+    }
+    .form__submit-search {
+        display: block;
     }
 }
 
 @media (min-width: 540px) and (max-width: 990px) {
-    .edit-card {
+    .card {
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
