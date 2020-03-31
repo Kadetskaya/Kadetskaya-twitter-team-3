@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
-const submitBtn = document.getElementById('submitBtn');
+const loginBtn = document.getElementById('submitBtn');
 const email = document.getElementById('loginEmail');
 const password = document.getElementById('loginPassword');
 
-submitBtn.addEventListener('click', checkInput);
+loginBtn.addEventListener('click', checkInput);
 let error = true;
 
 function checkInput() {
@@ -30,6 +30,6 @@ function checkInput() {
     }
 
 }
-if (error == false) {
+if (error === false) {
     window.location = 'main-page.html'
 }

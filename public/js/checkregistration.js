@@ -1,6 +1,6 @@
 "use strict"
 
-const submitBtn = document.getElementById('submitBtn');
+const regBtn = document.getElementById('submitBtn');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
@@ -9,7 +9,7 @@ const dateOfBirth = document.getElementById('dateOfBirth');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 
-submitBtn.addEventListener('click', checkInput);
+regBtn.addEventListener('click', checkInput);
 let error = true;
 
 
@@ -77,7 +77,7 @@ function checkInput() {
         confirmPassword.style.borderBottom = "2px solid red";
     }
 
-    if (error == false) {
+    if (error === false) {
         window.location = 'http://localhost:63342/twitter-team-3/build/main.html?_ijt=hvtpv84dvu7hnlpckt4l26upks'
     }
 }
