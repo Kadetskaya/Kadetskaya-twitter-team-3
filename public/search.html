@@ -7,7 +7,7 @@
     <link href="//abs.twimg.com/favicons/twitter.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/edit.css">
+    <link rel="stylesheet" href="css/search.css">
     <script src="https://kit.fontawesome.com/1a40de8d21.js" crossorigin="anonymous"></script>
     <title>Search</title>
 </head>
@@ -55,7 +55,7 @@
             <div class="col-lg-2 offset-1 d-none d-md-block">
                 <div class="search-block">
                     <input class="search__input" placeholder="Search" type="text">
-                    <a href="search.html"></a><img alt="Search Icon" class="search__img" src="img/search_icon.svg">
+                    <a href="search.html"><img alt="Search Icon" class="search__img" src="img/search_icon.svg"></a>
                 </div>
             </div>
 
@@ -68,33 +68,33 @@
 </header>
 
 
-<div class="container main col-lg-10">
+<div class="container search-main col-lg-10">
     <div class="search-row row">
-        <div class="profile-block-info col-lg-3">
-            <div class="background">
-                <div class="profile-img"></div>
+        <div class="search__profile-block col-lg-3">
+            <div class="search-background">
+                <div class="search__profile-img"></div>
             </div>
-            <div class="card">
-                <div class="username">
-                    <a href="personal.html" class="name">Name Lastname</a>
+            <div class="search-card">
+                <div class="search-username">
+                    <a href="personal.html" class="search-name">Name Lastname</a>
                     <br>
-                    <span class="nickname">@nickname</span>
+                    <span class="search-nickname">@nickname</span>
                 </div>
-                <div class="info">
-                    <a href="#">
+                <div class="search-info">
+                    <a href="#" class="search__info-title">
                         Tweets
                         <br>
-                        <span class="amount">0</span>
+                        <span class="search__info-amount">0</span>
                     </a>
-                    <a href="#">
+                    <a href="#" class="search__info-title">
                         Following
                         <br>
-                        <span class="amount">0</span>
+                        <span class="search__info-amount">0</span>
                     </a>
-                    <a href="#">
+                    <a href="#" class="search__info-title">
                         Followers
                         <br>
-                        <span class="amount">0</span>
+                        <span class="search__info-amount">0</span>
                     </a>
                 </div>
             </div>
@@ -124,8 +124,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
 
@@ -135,10 +133,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script src="./vendor/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>
