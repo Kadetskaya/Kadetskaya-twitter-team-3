@@ -10,14 +10,14 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="first-nav collapse navbar-collapse mr-auto">
+<nav class="navbar login-navbar navbar-expand-lg navbar-light bg-light login-nav">
+    <div class="first-nav login-first-nav collapse navbar-collapse mr-auto">
         <ul class="first-nav__home-items home-items navbar-nav">
-            <li class="nuw-item home-items-li">
-                <a href="#"><img src="./img/home_icon.svg" width="22" height="19" class="d-inline-block align-text-top icon-margin ">Home</a>
+            <li class="nuw-item home-items-li login-home-items-li">
+                <a href="#"><img src="./img/home_icon.svg" width="22" height="19" class="d-inline-block align-text-top icon-margin login-icon-margin">Home</a>
             </li>
-            <li class="nuw-item home-items-li">
-                <a href="#"> <img src="./img/connect_icon.svg" width="21" height="21" alt="" class="d-inline-block align-text-top icon-margin">About</a>
+            <li class="nuw-item home-items-li login-home-items-li">
+                <a href="#"> <img src="./img/connect_icon.svg" width="21" height="21" alt="" class="d-inline-block align-text-top icon-margin login-icon-margin">About</a>
             </li>
         </ul>
     </div>
@@ -25,20 +25,19 @@
         <img src="./img/twitter_logo.png" class="d-inline-block align-text-top" alt=""></div>
 </nav>
 
-<div class="container">
-    <form>
-        <div class="form__title">Log in to Twitter</div>
-        <div class="form-group">
-            <input type="email" id="loginEmail" class="form-control" aria-describedby="emailHelp" placeholder="Email or Username">
+<div class="container login-container">
+    <form class="login-form">
+        <div class="form__title login-form__title">Log in to Twitter</div>
+        <div class="form-group login-form-group">
+            <input type="email" id="loginEmail" class="form-control login-form-control" aria-describedby="emailHelp" placeholder="Email or Username">
         </div>
-        <div class="form-group">
-            <input type="password" id="loginPassword" class="form-control" placeholder="Password">
+        <div class="form-group login-form-group">
+            <input type="password" id="loginPassword" class="form-control login-form-control" placeholder="Password">
         </div>
-        <input type="button" id="submitBtn" class="btn btn-primary" value="SUBMIT">
-        <button type="submit" class="btn btn-primary"><a style="text-decoration: none; color: #fff" href="main-page.html">SUBMIT</a></button>
+        <input type="button" id="submitBtn" class="btn login-btn btn-primary login-btn-primary" value="SUBMIT">
     </form>
-    <div class="reference">
-        <div class="reference__text">Need a twitter?
+    <div class="reference login-reference">
+        <div class="reference__text login-reference__text">Need a twitter?
             <a href="./signup.html">SIGN UP</a></div>
     </div>
 
