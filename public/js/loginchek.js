@@ -4,13 +4,9 @@ const loginBtn = document.getElementById('submitBtn');
 const email = document.getElementById('loginEmail');
 const password = document.getElementById('loginPassword');
 
-submitBtn.addEventListener('click', checkInput);
+loginBtn.addEventListener('click', checkInput);
 
 let error = false;
-
-
-
-
 
 function checkInput() {
 
@@ -34,7 +30,7 @@ function checkInput() {
         password.style.borderBottom = "2px solid red";
     }
 
-    if (error == false) {
+    if (error === false) {
         window.location = 'main-page.html';
     }
 }

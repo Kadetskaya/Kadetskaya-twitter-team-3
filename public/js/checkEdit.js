@@ -87,7 +87,7 @@ function updateInfo() {
         userName.style.border = "1px solid red";
     }
 
-    if (bio.value.match(/^[A-Za-zА-Яа-я0-9!@#$%^&*_,\-\.\(\)]{0, 1000}$/)) {
+    if (bio.value.match(/^{0,1000}$/)) {
         error = true;
         bio.style.border = "0";
         bio.style.borderBottom = "2px solid #DEE2E6";
