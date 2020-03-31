@@ -5,13 +5,13 @@ const email = document.getElementById('loginEmail');
 const password = document.getElementById('loginPassword');
 
 submitBtn.addEventListener('click', checkInput);
-<<<<<<< HEAD
+
 let error = false;
 let result;
-=======
-let error = true;
 
->>>>>>> a28040d77f2f3ca44edc588ff10a9c5bcdcb9327
+
+
+
 function checkInput() {
 
     if( email.value.match(/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i) ) {
