@@ -102,9 +102,10 @@
                             <textarea class="textarea" id="textarea" maxlength="280"
                                       placeholder="Write your tweet..."></textarea>
                             <div class="textarea-counter"><span class="count-symbol">0</span>/280</div>
+                            <div id="textarea-danger" style="display:none;" class="p-3 mb-2 bg-danger text-white">Ошибка</div>
                         </div>
                         <div class="tweet-submit-block">
-                            <input class="tweet-send" type="submit" value="TWEET">
+                            <input class="tweet-send" id="addTwitt" type="button" value="TWEET">
                         </div>
                     </form>
                 </div>
@@ -248,5 +249,6 @@
 <script crossorigin="anonymous"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/check-twitt.js"></script>
 </body>
 </html>
