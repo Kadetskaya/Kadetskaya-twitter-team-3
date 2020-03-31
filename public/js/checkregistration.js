@@ -78,6 +78,6 @@ function checkInput() {
     }
 
     if (error === false) {
-        window.location = 'http://localhost:63342/twitter-team-3/build/main.html?_ijt=hvtpv84dvu7hnlpckt4l26upks'
+        window.location = 'main-page.html';
     }
 }
