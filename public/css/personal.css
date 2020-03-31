@@ -2,14 +2,13 @@
 body {
     background-color: #e5edf0;
     font-family: HelveticaRegular;
-    width: 100%;
-    padding-bottom: 50px;
 }
 
 a:hover{
     text-decoration: none;
 }
-.header {
+
+.personal-header {
     background-color: #f5f8fa;
     flex-wrap: wrap;
     -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
@@ -20,13 +19,6 @@ a:hover{
 .row {
     width: 100%;
     margin: 0;
-}
-
-/* HEADER */
-
-.header {
-    background-color: #f5f8fa;
-    flex-wrap: wrap;
 }
 
 .head {
@@ -114,28 +106,21 @@ a:hover{
     margin-right: 5px;
 }
 
-button {
-    padding-left: 0px!important;
-}
 
 button:focus {
     outline: none;
 }
 
-.btn {
+.personal-header__btn {
     width: auto;
     height: 30px;
     background-color: #4ca2f5;
     border-radius: 0;
-}
-
-.btn-primary {
     font-size: 0.8rem;
-}
-
-.twit {
     border-radius: 15px;
 }
+
+
 
 @media (max-width: 990px) {
     .head {
@@ -155,13 +140,13 @@ button:focus {
     width: 100%;
 }
 
-.background-profile{
+.personal-background-profile{
     width: 100%;
     height: 200px;
     background-color: #2aa3ef;
 }
 
-.menu-block{
+.personal-menu-block{
 
     background-color: #ffffff;
     -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
@@ -169,7 +154,7 @@ button:focus {
     box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
 }
 
-.tab {
+.personal-tab {
 
     height: 48px;
     padding-top: 5px;
@@ -188,43 +173,44 @@ flex-direction: column;
     box-sizing: border-box;
 }
 
-ul{
+.personal-tabs__caption{
     margin: 0;
 }
-.active.tab {
+
+.active.personal-tab {
     color: #2AA3EF;
     border-bottom: 4px solid #007bff;
 }
 
 
-.tabs__caption{
+.personal-tabs__caption{
     display: flex;
 }
 
-.tabs-number{
+.personal-tabs-number{
     font-weight: bold;
     font-size: 16px;
 }
 
-.edit-profile{
+.personal-edit-profile{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.edit{
+.personal-edit{
     padding-right: 10px;
     color: #595959;
 }
 
-.tabs__content {
+.personal-tabs__content {
     display: none; /* по умолчанию прячем все блоки */
 }
-.tabs__content.active {
+.personal-tabs__content.active {
     display: block; /* по умолчанию показываем нужный блок */
 }
 
-.background-avatar{
+.personal-background-avatar{
     margin: 0;
     margin-top: -150px;
     width: 180px;
@@ -235,7 +221,7 @@ ul{
     border-radius: 50%;
 }
 
-.fa-user{
+.profile-background-icon{
     font-size: 100px;
     position: absolute;
     top: 50%;
@@ -244,51 +230,50 @@ ul{
     color: #ffffff;
 }
 
-.profile-name{
+.personal-profile-name{
     margin-top: 20px;
     color: #14171A;
     font-size: 20px;
     font-weight: bold;
 }
 
-.profile-tag{
+.personal-profile-tag{
     color: #657786;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
-.profile-bio{
+.personal-profile-bio{
     color: #14171A;
     font-size: 14px;
 }
 
-.info-block{
+.personal-info-block{
     padding-left: 15%;
 }
 
-.followers-block{
+.personal-followers-block{
     margin-top: 20px;
     height: 400px;
     background-color: #ffffff;
     border-radius: 5px;
 }
 
-.view-all{
+.personal-view-all{
     font-weight: 400;
     font-size: 12px;
     color: #007bff;
 }
 
-.bold{
+
+
+.personal-follow-description{
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
 }
 
-.follow-description{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.follow-person-background{
+.personal-follow-person-background{
     width: 40px;
     margin-right: 10px;
     height: 40px;
@@ -297,15 +282,16 @@ ul{
     background-color: #999999;
 }
 
-.person-icon{
+.personal-person-icon{
     font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    color: #ffffff;
 }
 
-.follow-person{
+.personal-follow-person{
     margin-top: 10px;
     border-bottom: 1px solid #999999;
     display: flex;
@@ -315,24 +301,17 @@ ul{
 }
 
 
-.follow-person:last-child{
+.personal-follow-person:last-child{
     border-bottom: 0;
 }
 
 
-.person-text{
+.personal-person-text{
     font-weight: bold;
     color: #010101;
     margin-bottom: 4px;
 }
-
-.person-link{
-    font-size: 14px;
-    font-weight: 400;
-    color: #999999;
-}
-
-.person-button{
+.personal-person-button{
     color: #ffffff;
     background-color: #007bff;
     border-radius: 20px;
@@ -340,18 +319,19 @@ ul{
     font-size: 14px;
 }
 
-.follow-person-info{
+.personal-follow-person-info{
     display: flex;
 }
 
-.write-tweet{
+.personal-write-tweet{
     margin-top: 20px;
     background-color: #E8F5FD;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5px;
 }
-.textarea{
+
+.personal-textarea{
     height: 40px;
     border: 0;
     border-bottom: 1px solid #999999;
@@ -362,19 +342,18 @@ ul{
     outline: none;
     transition: all 0.4s ease-out;
 }
-
-.textarea:focus{
+.personal-textarea:focus{
     border-bottom: 2px solid #6610f2;
 }
 
-.textarea-counter{
+.personal-textarea-counter{
     float: right;
     font-size: 12px;
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
-.tweet-send{
+.personal-tweet-send{
     width: 75px;
     height: 35px;
     border-radius: 20px;
@@ -386,22 +365,15 @@ ul{
     display: block;
 }
 
-.person-card{
-    width: 100%;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
 
-.tweet-footer{
-    display: flex;
-}
-
-.tweet-textarea-block{
+.personal-tweet-textarea-block{
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
-.tweet-submit-block{
+
+
+.personal-tweet-submit-block{
     display: flex;
     justify-content: flex-end;
     margin: 0;
@@ -409,8 +381,23 @@ ul{
     padding-bottom: 15px;
 }
 
+
+
 @media (max-width: 500px) {
-.edit{
+    .personal-edit{
     padding-right: 0;
 }
+    .personal-person-link{
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;
+    }
 }
+
+.personal-following-background{
+    background-color: #007bff;
+    width: 100%;
+    height: 100px;
+}
+
+

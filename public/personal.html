@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header class="navbar sticky-top header">
+<header class="navbar sticky-top personal-header">
     <div class="container">
         <div class="row head align-items-center">
             <nav class="navbar navbar-expand-md  navbar-light justify-content-between">
@@ -47,7 +47,7 @@
             </div>
 
             <div class="col-lg-1 offset-lg-5">
-                <img alt="twitter logo" src="img/twitter_logo.svg" class="twitter__logo">
+                <img alt="twitter logo" class="twitter__logo" src="img/twitter_logo.svg">
             </div>
 
             <div class="col-lg-2 offset-1 d-none d-md-block">
@@ -58,29 +58,29 @@
             </div>
 
             <div class="col-lg-1 d-none d-md-flex align-items-center">
-                <a href="#" class="btn btn-primary twit">Twitter</a>
-                <a href="index.html" class="nav-link text-muted">Logout</a>
+                <a class="personal-header__btn btn btn-primary twit" href="#">Twitter</a>
+                <a class="nav-link text-muted" href="index.html">Logout</a>
             </div>
         </div>
     </div>
 </header>
-<div class="container-fluid background-profile"></div>
+<div class="container-fluid personal-background-profile"></div>
 
-<div class="menu-block">
+<div class="personal-menu-block">
     <div class="container">
         <div class="row">
             <div class="offset-lg-3 col-lg-6 d-lg-flex d-none">
-                <div class="tabs">
-                <ul class="tabs__caption">
-                    <li class="active tab">Tweets<span class="tabs-number">0</span></li>
-                    <li class="tab">Following<span class="tabs-number">2</span></li>
-                    <li class="tab">Followers<span class="tabs-number">2</span></li>
-                </ul>
+                <div class="personal-tabs">
+                    <ul class="personal-tabs__caption">
+                        <li class="active personal-tab">Tweets<span class="personal-tabs-number">0</span></li>
+                        <li class="personal-tab">Following<span class="personal-tabs-number">2</span></li>
+                        <li class="personal-tab">Followers<span class="personal-tabs-number">2</span></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="col-lg-3 edit-profile">
-                <a class="edit" href="edit.html">Edit Profile</a>
+            <div class="col-lg-3 personal-edit-profile">
+                <a class="personal-edit" href="edit.html">Edit Profile</a>
 
             </div>
         </div>
@@ -93,91 +93,95 @@
 
             <div class="col-lg-3">
 
-                <div class="background-avatar">
-                    <i class="fas fa-user"></i>
+                <div class="personal-background-avatar">
+                    <i class="fas fa-user profile-background-icon"></i>
                 </div>
 
 
-                <div class="info-block">
-                    <div class="profile-name">
+                <div class="personal-info-block">
+                    <div class="personal-profile-name">
                         Yuschyk Yura
                     </div>
-                    <div class="profile-tag">
+                    <div class="personal-profile-tag">
                         @Yuschyk
                     </div>
 
-                    <div class="profile-bio">
+                    <div class="personal-profile-bio">
                         Edit your profile to add your bio
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="tabs">
-                <div class="tabs__content active">
-                    <div class="write-tweet">
+            <div class="col-lg-6 tabs-content-block">
+
+                <div class="personal-tabs__content active">
+                    <div class="personal-write-tweet">
                         <form action="" class="tweet-form">
-                            <div class="tweet-textarea-block">
-                            <textarea class="textarea" id="textarea" maxlength="280"
+                            <div class="personal-tweet-textarea-block">
+                            <textarea class="personal-textarea" id="textarea" maxlength="280"
                                       placeholder="Write your tweet..."></textarea>
-                                <div class="textarea-counter"><span class="count-symbol">0</span>/280</div>
+                                <div class="personal-textarea-counter"><span class="count-symbol">0</span>/280</div>
                             </div>
-                            <div class="tweet-submit-block">
-                                <input class="tweet-send" type="submit" value="TWEET">
+                            <div class="personal-tweet-submit-block">
+                                <input class="personal-tweet-send" type="submit" value="TWEET">
                             </div>
                         </form>
                     </div>
                 </div>
 
-                <div class="tabs__content">
-                    Содержимое второго блока
-                </div>
-                <div class="tabs__content">
-                    Содержимое второго блока
-                </div>
+                <div class="personal-tabs__content">
+                <h2>Following</h2>
+                    </div>
+
+                <div class="personal-tabs__content">
+                   <h2>Followers</h2>
                 </div>
             </div>
 
-            <div class="col-lg-3 followers-block">
-                <p class="bold follow-description">Who to follow · <a class="view-all" href="#viewAll">View all</a></p>
+            <div class="col-lg-3 personal-followers-block">
+                <p class="personal-follow-description">Who to follow · <a class="personal-view-all" href="#viewAll">View
+                    all</a></p>
 
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="personal-follow-person">
+                    <div class="personal-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="personal-follow-person-background">
+                            <i class="fas fa-user personal-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="personal-person-text">Maksim Zima<span
+                                    class="px-2 personal-person-link">@max</span></p>
+                            <input class="personal-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
                     <i class="fas fa-times"></i>
                 </div>
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="personal-follow-person">
+                    <div class="personal-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="personal-follow-person-background">
+                            <i class="fas fa-user personal-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="personal-person-text">Maksim Zima<span
+                                    class="px-2 personal-person-link">@max</span></p>
+                            <input class="personal-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
                     <i class="fas fa-times"></i>
                 </div>
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="personal-follow-person">
+                    <div class="personal-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="personal-follow-person-background">
+                            <i class="fas fa-user personal-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="personal-person-text">Maksim Zima<span
+                                    class="px-2 personal-person-link">@max</span></p>
+                            <input class="personal-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
                     <i class="fas fa-times"></i>
