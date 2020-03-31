@@ -12,54 +12,64 @@
 </head>
 <body>
 
-<header class="navbar sticky-top header">
+<header class="navbar main-page-navbar sticky-top main-page-header">
     <div class="container">
-        <div class="row head align-items-center">
-            <nav class="navbar navbar-expand-md  navbar-light justify-content-between">
+        <div class="row main-page-row head main-page-head align-items-center">
+            <nav class="navbar main-page-navbar navbar-expand-md  navbar-light justify-content-between">
 
-                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler" data-target="#navbarSupportedContent"
+                <button aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation main-page-navigation"
+                        class="main-page-button main-page-navbar-toggler navbar-toggler"
+                        data-target="#navbarSupportedContent"
                         data-toggle="collapse" type="button">
-                    <i class="fa fa-list-alt fa-4x"></i>
+                    <i class="fa main-page-fa fa-list-alt fa-4x"></i>
                 </button>
 
-                <div class="collapse navbar-collapse navigation-list" id="navbarSupportedContent">
-                    <a class="navigation-item d-block d-md-none" href="main-page.html">
+                <div class="collapse navbar-collapse navigation-list main-page-navigation-list"
+                     id="navbarSupportedContent">
+                    <a class="main-page-a navigation-item main-page-navigation-item d-block d-md-none"
+                       href="main-page.html">
                         <span class="navigation-item__text">Home</span>
                     </a>
-                    <a class="navigation-item d-block d-md-none" href="search.html">
+                    <a class="main-page-a navigation-item main-page-navigation-item d-block d-md-none"
+                       href="search.html">
                         <span class="navigation-item__text">Search</span>
                     </a>
-                    <a class="navigation-item d-block d-md-none" href="#">
+                    <a class="main-page-a navigation-item main-page-navigation-item d-block d-md-none" href="#">
                         <span class="navigation-item__text">Twitter</span>
                     </a>
-                    <a class="navigation-item d-block d-md-none" href="index.html">
+                    <a class="main-page-a navigation-item main-page-navigation-item d-block d-md-none"
+                       href="index.html">
                         <span class="navigation-item__text">Logout</span>
                     </a>
                 </div>
             </nav>
 
             <div class="col-lg-1">
-                <a class="navigation-item d-none d-md-flex" href="main-page.html">
-                    <img alt="Home icon" class="navigation-item__img home" src="img/home_icon.svg">
+                <a class="main-page-a navigation-item main-page-navigation-item d-none d-md-flex" href="main-page.html">
+                    <img alt="Home icon" class="navigation-item__img main-page-navigation-item__img home"
+                         src="img/home_icon.svg">
                     <span class="navigation-item__text">Home</span>
                 </a>
             </div>
 
             <div class="col-lg-1 offset-lg-5">
-                <img alt="twitter logo" src="img/twitter_logo.svg" class="twitter__logo">
+                <img alt="twitter logo" src="img/twitter_logo.svg" class="twitter__logo main-page-twitter__logo">
             </div>
 
             <div class="col-lg-2 offset-1 d-none d-md-block">
-                <div class="search-block">
-                    <input class="search__input" placeholder="Search" type="text">
-                    <a href="search.html"><img alt="Search Icon" class="search__img" src="img/search_icon.svg"></a>
+                <div class="search-block main-page-search-block">
+                    <input class="search__input main-page-search__input" placeholder="Search" type="text">
+                    <a class="main-page-a" href="search.html"><img alt="Search Icon"
+                                                                   class="search__img main-page-search__img"
+                                                                   src="img/search_icon.svg"></a>
                 </div>
             </div>
 
             <div class="col-lg-1 d-none d-md-flex align-items-center">
-                <a href="#" class="btn btn-primary twit">Twitter</a>
-                <a href="index.html" class="nav-link text-muted">Logout</a>
+                <a href="#"
+                   class="btn main-page-btn btn-primary main-page-btn-primary twit main-page-twit">Twitter</a>
+                <a href="index.html" class="nav-link text-muted main-page-a">Logout</a>
             </div>
         </div>
     </div>
@@ -68,62 +78,68 @@
 <main class="main">
     <div class="container">
         <div class="row">
-            <div class="profile-block-info col-lg-3">
-                <div class="background">
-                    <div class="profile-img"><i class="fas fa-user"></i></div>
+            <div class="profile-block-info main-page-profile-block-info col-lg-3">
+                <div class="background main-page-background">
+                    <div class="profile-img main-page-profile-img"><i
+                            class="fas main-page-fas fa-user main-page-fa-user"></i></div>
                 </div>
-                <div class="card">
-                    <div class="username">
-                        <a class="name" href="personal.html">Yuschyk Yura</a>
+                <div class="card main-page-card">
+                    <div class="username main-page-username">
+                        <a class="name main-page-name main-page-a" href="personal.html">Yuschyk Yura</a>
 
                         <div class="nickname">@Yuschyk</div>
                     </div>
-                    <div class="info">
-                        <a href="#">
+                    <div class="info main-page-info">
+                        <a class="main-page-a" href="#">
                             Tweets
-                            <div class="amount">0</div>
+                            <div class="amount main-page-amount">0</div>
                         </a>
-                        <a href="#">
+                        <a class="main-page-a" href="#">
                             Following
-                            <div class="amount">0</div>
+                            <div class="amount main-page-amount">0</div>
                         </a>
-                        <a href="#">
+                        <a class="main-page-a" href="#">
                             Followers
-                            <div class="amount">0</div>
+                            <div class="amount main-page-amount">0</div>
                         </a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-6">
-                <div class="write-tweet">
+                <div class="write-tweet main-page-write-tweet">
                     <form action="" class="tweet-form">
-                        <div class="tweet-textarea-block">
-                            <textarea class="textarea" id="textarea" maxlength="280"
+                        <div class="tweet-textarea-block main-page-tweet-textarea-block">
+                            <textarea class="textarea main-page-textarea" id="textarea" maxlength="280"
                                       placeholder="Write your tweet..."></textarea>
-                            <div class="textarea-counter"><span class="count-symbol">0</span>/280</div>
-                            <div id="textarea-danger" style="display:none;" class="p-3 mb-2 bg-danger text-white">Ошибка</div>
+                            <div class="textarea-counter main-page-textarea-counter"><span class="count-symbol">0</span>/280
+                            </div>
+                            <div id="textarea-danger" style="display:none;" class="p-3 mb-2 bg-danger text-white">
+                                Ошибка
+                            </div>
                         </div>
-                        <div class="tweet-submit-block">
-                            <input class="tweet-send" id="addTwitt" type="button" value="TWEET">
+                        <div class="tweet-submit-block main-page-tweet-submit-block">
+                            <input class="tweet-send main-page-tweet-send" id="addTwitt" type="button" value="TWEET">
                         </div>
                     </form>
                 </div>
 
-                <div class="card mb-2 mt-4 person-card">
+                <div class="card main-page-card mb-2 mt-4 person-card main-page-person-card">
                     <div class="card-body py-3 px-0 ">
 
-                        <div class="person-info-block">
-                            <img class="person-img mx-3" src="img/tape/giulioBXProfilePic.png">
+                        <div class="person-info-block main-page-person-info-block">
+                            <img class="person-img main-page-person-img mx-3" src="img/tape/giulioBXProfilePic.png">
                             <span class="px-1">Kyle Kuzma</span>
-                            <span class="card-subtitle tweet-time  px-3 text-muted font-size-12"> · June 28</span>
+                            <span class="card-subtitle tweet-time main-page-tweet-time px-3 text-muted font-size-12"> · June 28</span>
                         </div>
 
-                        <p class="card-text mb-3 px-3 font-weight-normal  card-title">Twitter changes its layout,again.
-                            This one is a huge tweet.<a class="card-link" href="#"> #NewTwitter</a></p>
+                        <p class="card-text mb-3 px-3 font-weight-normal main-page-card-title card-title">Twitter
+                            changes its layout,again.
+                            This one is a huge tweet.<a class="card-link main-page-card-link main-page-a" href="#">
+                                #NewTwitter</a></p>
 
                         <div class="mt-2 px-3">
-                            <div class="tweet-footer">
+                            <div class="tweet-footer main-page-tweet-footer">
 
                                 <div class="mr-2 ">
                                     <img src="img/tape/replyIcon.png">
@@ -149,21 +165,23 @@
                 </div>
 
 
-                <div class="card mb-2 mt-4 person-card">
+                <div class="card main-page-card mb-2 mt-4 person-card main-page-person-card">
                     <div class="card-body py-3 px-0 ">
 
-                        <div class="person-info-block">
-                            <img class="person-img mx-3" src="img/user3_profile_pic.png">
+                        <div class="person-info-block main-page-person-info-block">
+                            <img class="person-img main-page-person-img mx-3" src="img/user3_profile_pic.png">
                             <span class="px-1">Anthony Davis</span>
-                            <span class="card-subtitle tweet-time  px-3 text-muted font-size-12"> · Oct 2</span>
+                            <span class="card-subtitle tweet-time main-page-tweet-time px-3 text-muted font-size-12"> · Oct 2</span>
                         </div>
 
-                        <p class="card-text mb-3 px-3 font-weight-normal card-title">This is a tweet with a nice<a
-                                class="card-link" href="#"> #picture </a>attached. Feel free to insert your favorite
+                        <p class="card-text mb-3 px-3 font-weight-normal card-title main-page-card-title">This is a
+                            tweet with a nice
+                            <a class="main-page-a card-link main-page-card-link" href="#"> #picture </a>attached. Feel
+                            free to insert your favorite
                             image here.</p>
 
                         <div class="mt-2 px-3">
-                            <div class="tweet-footer">
+                            <div class="tweet-footer main-page-tweet-footer">
 
                                 <div class="mr-2 ">
                                     <img src="img/tape/replyIcon.png">
@@ -189,50 +207,54 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 followers-block">
-                <p class="bold follow-description">Who to follow · <a class="view-all" href="#viewAll">View all</a></p>
+            <div class="col-lg-3 followers-block main-page-followers-block">
+                <p class="bold main-page-bold follow-description main-page-follow-description">Who to follow · <a
+                        class="main-page-a view-all main-page-view-all" href="#viewAll">View all</a></p>
 
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="follow-person main-page-follow-person">
+                    <div class="follow-person-info main-page-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="follow-person-background main-page-follow-person-background">
+                            <i class="fas main-page-fas fa-user main-page-fa-user person-icon main-page-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="person-text main-page-person-text">Maksim Zima<span
+                                    class="px-2 person-link main-page-person-link">@max</span></p>
+                            <input class="person-button main-page-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
-                    <i class="fas fa-times"></i>
+                    <i class="fas main-page-fas fa-times"></i>
                 </div>
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="follow-person main-page-follow-person">
+                    <div class="follow-person-info main-page-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="follow-person-background main-page-follow-person-background">
+                            <i class="fas main-page-fas fa-user main-page-fa-user person-icon main-page-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="person-text main-page-person-text">Maksim Zima<span
+                                    class="px-2 person-link main-page-person-link">@max</span></p>
+                            <input class="person-button main-page-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
-                    <i class="fas fa-times"></i>
+                    <i class="fas main-page-fas fa-times"></i>
                 </div>
-                <div class="follow-person">
-                    <div class="follow-person-info">
+                <div class="follow-person main-page-follow-person">
+                    <div class="follow-person-info main-page-follow-person-info">
 
-                        <div class="follow-person-background">
-                            <i class="fas fa-user person-icon"></i>
+                        <div class="follow-person-background main-page-follow-person-background">
+                            <i class="fas main-page-fas fa-user main-page-fa-user person-icon main-page-person-icon"></i>
                         </div>
 
                         <div class="person-history">
-                            <p class="person-text">Maksim Zima<span class="px-2 person-link">@max</span></p>
-                            <input class="person-button" type="button" value="FOLLOWING">
+                            <p class="person-text main-page-person-text">Maksim Zima<span
+                                    class="px-2 person-link main-page-person-link">@max</span></p>
+                            <input class="person-button main-page-person-button" type="button" value="FOLLOWING">
                         </div>
                     </div>
-                    <i class="fas fa-times"></i>
+                    <i class="fas main-page-fas fa-times"></i>
                 </div>
 
             </div>

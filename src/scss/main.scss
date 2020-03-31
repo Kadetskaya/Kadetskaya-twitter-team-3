@@ -2,47 +2,47 @@ body {
     background-color: #e5edf0;
 }
 
-.container {
+.index-container {
     margin-top: 90px;
     width: 40%;
     font-family: Helvetica;
     font-weight: bolder;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
+.index-btn-primary:not(:disabled):not(.disabled).active,
+.index-btn-primary:not(:disabled):not(.disabled):active,
+.index-show>.btn-primary.dropdown-toggle {
     background-color: #4993f4;
     border: none;
 }
 
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.show>.btn-secondary.dropdown-toggle {
+.index-btn-secondary:not(:disabled):not(.disabled).active,
+.index-btn-secondary:not(:disabled):not(.disabled):active,
+.index-show>.btn-secondary.dropdown-toggle {
     background-color: #ffffff;
     color: #4993f4;
     border: none;
 }
 
-.btn {
+.index-btn {
     border-radius: 20px;
     height: 35px;
     padding: 3px;
 }
 
-.title {
+.index-title {
     margin-top: 10px;
     font-size: 2rem;
     line-height: 100%;
 }
 
-.text {
+.index-text {
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 @media screen and (min-width: 0) and (max-width: 1100px) {
-    .container {
+    .index-container {
         width: 80%;
     }
 }
