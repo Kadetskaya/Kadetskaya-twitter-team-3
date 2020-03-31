@@ -5,7 +5,7 @@ const email = document.getElementById('loginEmail');
 const password = document.getElementById('loginPassword');
 
 submitBtn.addEventListener('click', checkInput);
-let error = false;
+let error = true;
 let result;
 function checkInput() {
 
@@ -31,5 +31,5 @@ function checkInput() {
 
 }
 if (error == false) {
-    window.location = 'main.html'
+    window.location = 'main-page.html'
 }
