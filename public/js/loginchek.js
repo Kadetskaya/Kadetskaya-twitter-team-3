@@ -6,7 +6,7 @@ const password = document.getElementById('loginPassword');
 
 submitBtn.addEventListener('click', checkInput);
 let error = true;
-let result;
+
 function checkInput() {
 
     if( email.value.match(/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i) ) {
