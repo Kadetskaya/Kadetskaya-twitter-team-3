@@ -140,22 +140,14 @@ body {
 /* MAIN-BLOCK */
 
 
-.edit-main {
+.search-main {
     margin-top: 15px;
     margin-bottom: 30px;
     padding: 0;
     display: block;
 }
 
-.edit-profile-block {
-    padding: 0;
-    margin: 15px;
-    margin-top: 0;
-    background-color: #ffffff;
-    height: 140px;
-}
-
-.edit-profile-block-info {
+.search__profile-block {
     padding: 0;
     margin: 15px;
     margin-top: 0;
@@ -165,12 +157,12 @@ body {
     overflow: visible;
 }
 
-.edit-background {
+.search-background {
     background-color: #4ca2f5;
     height: 85px;
 }
 
-.edit-profile-img {
+.search__profile-img {
     width: 60px;
     height: 60px;
     background-color: #4ca2f5;
@@ -182,46 +174,43 @@ body {
     left: 0;
 }
 
-.edit-card {
+.search-card {
     color: #667785;
     width: 250px;
     border: none;
     background-color: unset;
 }
 
-.edit-username {
+.search-username {
     padding-left: 85px;
 }
 
-.edit-name {
+.search-name {
     font-weight: bold;
     color: #000000;
 }
 
-.edit-info {
+.search-name:hover {
+    text-decoration: none;
+}
+
+.search-nickname {
+    color: #657786;
+}
+
+.search-info {
     display: flex;
     justify-content: space-around;
     width: 250px;
 }
 
-a {
+.search__info-title {
     color: #657786;
 }
 
-.amount {
+.search__info-amount {
     color: #657786;
     margin-left: 23px;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-
-
-.center-align {
-    text-align: center;
-    background-color: #e5edf0;
 }
 
 .form__search-tape {
