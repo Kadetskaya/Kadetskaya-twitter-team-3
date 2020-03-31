@@ -7,7 +7,7 @@ const password = document.getElementById('loginPassword');
 submitBtn.addEventListener('click', checkInput);
 
 let error = false;
-let result;
+
 
 
 
@@ -35,6 +35,6 @@ function checkInput() {
     }
 
     if (error == false) {
-        window.location = 'main-page.html'
+        window.location = 'main-page.html';
     }
 }
