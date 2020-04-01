@@ -11,22 +11,28 @@
 </head>
 <body>
 
-<nav class="navbar signup-navbar navbar-expand-lg navbar-light bg-light signup-nav">
-    <div class="first-nav signup-first-nav collapse navbar-collapse mr-auto">
-        <ul class="first-nav__home-items home-items navbar-nav">
-            <li class="nuw-item home-items-li signup-home-items-li">
-                <a href="#"><img src="./img/home_icon.svg" width="22" height="19"
-                                 class="d-inline-block align-text-top icon-margin signup-icon-margin ">Home</a>
-            </li>
-            <li class="nuw-item home-items-li signup-home-items-li">
-                <a href="#"> <img src="./img/connect_icon.svg" width="21" height="21" alt=""
-                                  class="d-inline-block align-text-top icon-margin signup-icon-margin">About</a>
-            </li>
-        </ul>
+<header class="navbar sticky-top header login-navbar">
+    <div class="container">
+        <div class="row header-row align-items-center">
+            <div class="header-home col-lg-1 d-none d-lg-flex">
+                <a class="navigation-item" href="index.html">
+                    <img alt="Home icon" class="navigation-item__img home" src="img/home_icon.svg">
+                    <span class="navigation-item__text">Home</span>
+                </a>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-flex">
+                <a class="navigation-item" href="#">
+                    <span class="navigation-item__text">About</span>
+                </a>
+            </div>
+
+            <div class="col-lg-1 offset-lg-3 logo-center">
+                <img alt="twitter logo" src="img/twitter_logo.svg" class="login-twitter__logo">
+            </div>
+        </div>
     </div>
-    <div class="center-nav collapse navbar-collapse mr-auto">
-        <img src="./img/twitter_logo.png" alt="logo"></div>
-</nav>
+</header>
 
 <div class="container signup-container">
     <form class="signup-form">
@@ -67,18 +73,16 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-
-<script src="./vendor/js/bootstrap.min.js"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/check-twitt.js"></script>
 
 <script src="./js/checkregistration.js"></script>
 
